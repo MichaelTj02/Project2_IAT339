@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'PostGrotesk';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/PostGrotesk-Book.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'relativemono';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/relative-mono-11-pitch-trial.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PostGrotesk Medium';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/PostGrotesk-Medium.otf') format('truetype');
+}
+
