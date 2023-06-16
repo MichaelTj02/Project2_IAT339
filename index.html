@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P01 - Style Guide Template</h1>
+  
+    <br>
+      
+      <p>A template you can use to start building out your own style guides with.</p><br>
+    </header>
+
+    <nav> 
+      <div class="topnav">
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="product_listing.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a> 
+      </nav>
+    </div>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements.</h2>
+    </section>
+    
+      
+    <!-- in text link source from https://www.tutorialspoint.com/html/html_text_links.htm -->
+      <section class="element">
+        <h3>In-text link</h3><br>
+        <a href="https://www.youtube.com/watch?v=OqBKEuzR3VU&t=274s" > Favourite Canele Recipe </a> 
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <label for  = "fname" >First name:</label>
+        <input type = "text" id="fname" name="fname"><br><br>
+        <label for="lname" >Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <button type="submit" class="font4" value="Submit">Submit</button>
+        <button type="reset" class="font4" value="Reset">Reset</button>
+      </section>
+
+  <!-- 6. Style the <input> and <label> using Building Forms (Shay Howe) Links to an external site. as a guide. Add HTML as necessary to allow further control of the styling, and make sure:-->
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <form>
+          <label for="email-address">Email:</label>
+          <input type="email" id="email-address" placeholder = "name@domain.com">
+          <br>
+          <button type="submit" class="h4" value="Submit">Submit</button>
+        <button type="reset" class="h4" value="Reset">Reset</button>
+        </form>
+        <!-- a text input field and a label-->
+      </section>
+
+     <!--source:https://learn.shayhowe.com/html-css/building-forms/: payment method-->
+      <section class="element">
+        <h3>Payment Method</h3><br>
+      <label>
+        <input type="radio" name="Payment" value="Visa" checked >Visa 
+      </label>
+      <label>
+        <input type="radio" name="Payment" value="Mastercard"> Mastercard
+      </label>
+      <label>
+        <input type="radio" name="Payment" value="Paypal" class="font4"> Paypal
+      </label>
+      </section>
+
+      <!-- image as a link: https://www.tutorialspoint.com/html/html_image_links.htm-->
+      <!-- image source: https://www.istockphoto.com/photos/canele-->
+
+      <!-- image hover and link
+      source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity -->
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+        <a href="https://global.typology.com/products/vitamin-c-serum"><img
+          src="vitcserum.jpg" alt="vitcserum"></a>
+      </section>
+    
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements.</h2>
+
+      <!-- four levels of heading from lecture // -->
+      <section class="element">
+        <h3 class="font5">Headings</h3><br>
+        <h1> H1 header (Page Title)</h1>
+        <h2> H2 header (Section Heading)</h2><br>
+        <h3> H3 header (Sub Section Heading)</h3><br>
+        <h4> H4 header (Secondary sub Section Heading)</h4><br>
+        <p>  body Paragraphs </p>
+        <!-- learnt from the lab -->
+    </section>
+
+    <section class="element">
+      <h3>Paragraphs</h3><br>
+      <p>Start by seasoning the canele molds. <br>
+        In a small saucepan, combine the butter and milk and the beans from vanilla bean pod (can toss the whole bean pod in as well). Set the stove over medium heat bringing to a simmer. <br>
+        Immediately take off the heat. Steep for 10 minutes. <br>
+        In a separate bowl, add and combine dry ingredients. Whisk to combine. <br>
+        In another separate bowl, combine the eggs and egg yolks. Beat together. <br>
+        While whisking egg mixture, stream in hot milk mixture in small splashes until all gone. <br>
+        Add in good rum once combined. <br>
+      </p>
+    </section>
+
+   <section class="element">
+          <h3>Numbered Lists</h3>
+        <ol type="1">
+          <li>Ingredient 1</li>
+          <li>Ingredient 2</li>
+          <li>Ingredient 3</li>
+        </ol>
+        <!-- taken from https://www.w3schools.com/html/html_lists_ordered.asp -->
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements.</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3><br>
+        <div class="topnav">
+          <a href="#interactive_elements">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="product_listing.html">Product Listing Template</a>
+          <a href="checkout.html">Checkout Template</a>
+          <a href="#citations">Citations</a>
+        </div>
+          <!-- taken from https://www.w3schools.com/howto/howto_js_topnav.asp -->
+      </section>
+
+      <!--taken from : https://www.w3schools.com/howto/howto_css_three_columns.asp-->
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <br>
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="vitcserum.jpg" alt="Product 1" class="product-image">
+            <h4>Radiance Serum 
+              with 11% Vitamin C - from $15.50</h4>
+              <input type="submit" value="quickview" class="paymentbutton">
+          </div>
+        
+          <div class="product-item">
+            <img src="Images/image4.jpg" alt="image4" class="product-image">
+            <h4>Hydrolate 
+              Organic Peppermint - $10.50</h4>
+              <input type="submit" value="quickview" class="paymentbutton">
+          </div>
+        </div>
+      </section>
+      </section>
+
+<!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+      <section class="element">
+        <h3>Payment Form</h3><br>
+        <div class="row">
+          <div class="col-75">
+            <div class="container1">
+              <form action="/action_page.php"></form>
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fn"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fn" name="firstnam" placeholder="John M. Doe">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="New York">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="NY">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="10001">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label  for="fname">Accepted Cards</label>
+                    <div class="iconcontainer">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                      </div>
+                    </div>
+                  </div>
+        
+                </div>
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+
+
+              <input type="submit" value="Continue to checkout" class="paymentbutton">
+             
+            </div>
+          </div>
+      </section>
+
+      <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+      <section class="element">
+        <h3>Checkout Cart</h3><br>
+        <div class="col-25">
+          <div class="container1">
+            <h4>Cart </h4>
+              <span class="price" style="color:black">
+                <i class="fa fa-shopping-cart"></i> 
+                <b>2</b>
+              </span>
+            </h4>
+            <p>9-Ingredient Face Moisturiser — 50 ml</p> <span class="price">$15</span>
+            <p>9-Ingredient Face Soothing Serum</p> <span class="price">$27.50</span>
+            <p>delivery fee></p><span class="price">$5.00</span><br>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>$47.50</b></span></p>
+            <hr>
+            <input type="submit" value="Proceed to payment" class="paymentbutton">
+          </div>
+        </div>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+     <!-- // Branding ideas/art direction -->
+     <section id="branding_idea">
+
+      <section class="element">
+        <h2 class="font1">Branding Ideas.</h2>
+        <h3>What does the company do , or offer:</h3><br>
+        <p>Typology is a popular skincare brand known for its minimalist approach to skincare products. The brand focuses on creating effective, 
+          high-quality products with clean and simple formulations. Typology aims to provide transparency to 
+          consumers by clearly listing all the ingredients used in their products and avoiding any unnecessary additives or fragrances.</p> 
+
+        <h3>Who is the company to potential customers?</h3> <br>
+        <p>Typology's target customer is someone who values simplicity, transparency, and personalized skincare. 
+          They are likely individuals who appreciate minimalistic products with clean formulations, free from unnecessary additives and fragrances.</p>  
+
+        <h3>Why might this company entice someone to purchase a product or service?</h3><br>
+        <p>Typology skincare attracts customers through its distinctive approach that combines simplicity, transparency, and efficacy. 
+          The brand's minimalist philosophy resonates with individuals seeking skincare products with clean formulations and minimal ingredients. 
+          By prioritizing transparency, Typology builds trust with customers, who appreciate knowing exactly what they're putting on their skin. </p>
+      </section>
+
+      <section id="brand_components">
+
+        <h2>Brand Components.</h2>
+
+        <section class="element">
+          <h3>Font</h3><br>
+          <h1 class="font3">PostGrotesk (heading)</h1>
+          <p>relativemono (copy text) - regular</h1>
+        </section>
+
+
+        <section class="element">
+          <h3>Art Direction</h3><br>
+            <div class="block1">
+              <p>background</p>
+              <p>HEX #FFFFFF</p>
+              <p>main body background</p>
+            </div>
+
+            <div class="block2">
+              <p>text</p>
+              <p>HEX #000000</p>
+              <p>Font color, link hover</p>
+            </div>
+
+            <div class="block3">
+              <p>Accent 1</p>
+              <p>HEX #D3D3D3</p>
+              <p>button hover, product background</p>
+            </div>
+
+            <div class="block4">
+              <p>Accent2</p>
+              <p>HEX #F8F8F8</p>
+              <p>for seperation border in PLP and Homepage</p>
+            </div>
+        </section>
+
+        <section class="element">
+          <h3>Images ideas and Art Direction</h3><br>
+          <p> Typology's art direction is characterized by a minimalist and sophisticated aesthetic that reflects the brand's 
+            commitment to simplicity and transparency. With a clean color palette of neutral tones and pastels, Typology creates a sense 
+            of calmness and purity. The typography is sleek and modern, conveying a sense of elegance and clarity. Packaging design is functional 
+            yet visually appealing, incorporating clean lines and high-quality materials. Through high-quality product photography and natural elements, 
+            Typology showcases its skincare offerings in an elegant and minimalistic manner. Visual consistency across all touchpoints, 
+            a user-friendly digital experience, and engaging social media content further strengthen Typology's art direction, 
+            creating a visually cohesive and aspirational brand presence in the skincare industry.</p>
+
+
+          <!--source: learn from class-->
+          <div class="image-container">
+            <img src="Images/image1.jpg" alt="Image 1" class="image-inspo">
+            <img src="Images/image2.jpg" alt="Image 2" class="image-inspo">
+            <img src="Images/image3.jpg" alt="Image 3" class="image-inspo">
+            <img src="Images/image4.jpg" alt="Image 4" class="image-inspo">
+            <img src="Images/image5.jpg" alt="Image 5" class="image-inspo">
+            <img src="Images/image6.jpg" alt="Image 6" class="image-inspo">
+          </div>
+        </section>
+      
+      </section>
+
+    </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+        <li>Finklea, Josh. Designer. 2011 <strong>PostGrotesk [Font]</strong>. Retrieved from <a href="https://sharptype.co/typefaces/post-grotesk/"> https://sharptype.co/typefaces/post-grotesk/  </a></li>
+        <li>Foundry, Colophon. Designer. 2011 <strong>relativemono [Font]</strong>. Retrieved from <a href="https://www.typewolf.com/relative-mono">https://www.typewolf.com/relative-mono</a></li>
+        <li>Figure 1. [Skincare product retinol toner][Photograph].(nd). Retrieved from <a href="https://global.typology.com/products/firming-toner-retinol">https://global.typology.com/products/firming-toner-retinol</a></li>
+        <li>Figure 2. [vitamin c serum][Photograph].(nd). Retrieved from <a href="https://global.typology.com/products/vitamin-c-serum">https://global.typology.com/products/vitamin-c-serum</a></li>
+        <li>Figure 3. [skincare image][Photograph].(nd). Retrieved from <a href="https://settingmind.com/frances-typology-breaks-into-the-vegan-cruelty-free-skincare-market/">https://settingmind.com/frances-typology-breaks-into-the-vegan-cruelty-free-skincare-market/</a></li>
+        <li>Figure 4. [skincare image][Photograph].(nd). Retrieved from <a href="https://www.cocoandvera.com/2021/01/14/typology-paris-skincare/">https://www.cocoandvera.com/2021/01/14/typology-paris-skincare/</a></li>
+        <li>Figure 5. [Typology makeup images][Photograph].(nd). Retrieved from <a href="https://global.typology.com">https://global.typology.com</a></li>
+        <li>Figure 6. [skincare image][Photograph].(nd). Retrieved from <a href="https://fontsinuse.com/uses/40349/typology-skincare-identity">https://fontsinuse.com/uses/40349/typology-skincare-identity</a></li>
+        <li>Figure 7. [hydrolate peppermint][Photograph].(nd). Retrieved from <a href="https://global.typology.com/products/organic-peppermint-hydrolate">https://global.typology.com/products/organic-peppermint-hydrolate</a></li>
+        <li>Figure 8. [hydrolate peppermint][Photograph].(nd). Retrieved from <a href="https://global.typology.com/products/organic-peppermint-hydrolate">https://global.typology.com/products/organic-peppermint-hydrolate</a></li>
+        <li>Figure 9. [tinted][Photograph].(nd). Retrieved from <a href="https://global.typology.com/products/organic-peppermint-hydrolate">https://global.typology.com/products/organic-peppermint-hydrolate</a></li>
+        <li>Figure 9. [tinted][Photograph].(nd). Retrieved from <a href="https://global.typology.com/products/tinted-serum">https://global.typology.com/products/tinted-serum</a></li>
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>
