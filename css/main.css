@@ -11,7 +11,6 @@
   box-sizing: border-box;
 }
 
-
 .element {
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
@@ -62,6 +61,7 @@ p {
   line-height: 150%;
   margin-top: 0;
   margin-bottom: 0;
+  max-width: 40rem;
 }
 
 label {
@@ -95,11 +95,6 @@ a {
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 0;
-}
-
-
-p {
-  max-width: 40rem;
 }
 
 nav a:hover, nav a:focus {
@@ -243,51 +238,6 @@ input:focus{
 .topnav a:hover {
   background-color: black;
   color: white;
-}
-
-
- /*Page Title*/
-.font3 {
-  font-family: "PostGrotesk Medium", serif;
-  font-size: 70px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
- /*Section Heading*/
- .font1 {
-  font-family: "PostGrotesk", serif;
-  font-size: 3rem;
-  margin-bottom: 0;
-}
-
- /*body*/
-.font2 {
-  font-family: "relativemono", serif;
-  font-size: 16px;
-  font-weight: 410;
-  letter-spacing: 0.05em;
-  line-height: 150%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/*navigation*/
-.font4 {
-  font-family: "PostGrotesk", serif;
-  font-size: 16.5px;
-  font-weight: 400;
-  line-height: 22px;
-  margin-bottom: 0;
-}
-
-/*sub section heading*/
-.font5 {
-  font-family: "PostGrotesk", serif;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 22px;
-  margin-bottom: 0;
 }
 
 .column {
