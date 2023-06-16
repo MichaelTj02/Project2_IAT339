@@ -37,7 +37,7 @@ h3 {
   font-size: 2rem;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 h4 {
@@ -53,7 +53,7 @@ body {
   padding: 2rem;
 }
 
-p {
+p:not(.price) {
   font-family: "relativemono", serif;
   font-size: 16px;
   font-weight: 410;
@@ -61,7 +61,7 @@ p {
   line-height: 150%;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 40rem;
+  max-width: 40%;
 }
 
 label {
@@ -326,39 +326,39 @@ input:focus{
 }
 
 /* Payment Form */
-.container-payment-form {
+.container-payment-form-cart {
     background-color: #f2f2f2;
     padding: 5px 20px 15px 20px;
     border: 1px solid lightgrey;
     border-radius: 3px;
 }
   
-  input[type=text] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
   
-  .icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
-  }
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
   
-  .checkoutbtn{
-    background-color: black;
-    color: white;
-    padding: 12px;
-    margin: 10px 0;
-    width: 100%;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition-property: background-color; 
-    transition-duration: 0.5s;
-  }
+.checkoutbtn{
+  background-color: black;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
   
 .checkoutbtn:hover {
   background-color: white;
@@ -374,6 +374,7 @@ span.price {
   float: right;
   color: #000000;
 }
+/* end of payment form */
 
 .image-container {
   display: flex;
