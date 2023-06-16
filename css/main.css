@@ -1,0 +1,427 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+/*
+  1. change the default font
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+  padding-top: 2rem;
+}
+
+h1 {
+  font-family: "PostGrotesk Medium", serif;
+  font-size: 5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "PostGrotesk", serif;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: "PostGrotesk", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-family: "PostGrotesk", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: "relativemono", serif;
+  padding: 2rem;
+}
+
+p:not(.price) {
+  font-family: "relativemono", serif;
+  font-size: 16px;
+  font-weight: 410;
+  letter-spacing: 0.05em;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 40%;
+}
+
+label {
+  font-family: "PostGrotesk", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+input [type=submit]{
+  font-family: "PostGrotesk", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+button [type=submit]{
+  font-family: "PostGrotesk", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+
+a {
+  font-family: "PostGrotesk", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: rgb(251,249,247);
+  padding: 0.5rem;
+  display: block;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: black;
+  background-color: rgb(251,249,247);
+  text-decoration-color: white;
+  transition-property: lightgray; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: lightgray;
+
+}
+  
+label{
+  display:block;
+  margin-top: 1em;
+}
+
+/* 
+  3.The text input shows us when it has been interacted with, both on hover and focus
+  source:https://developer.mozilla.org/en-US/docs/Web/CSS/:focus.
+*/
+a {
+  color: darkgray;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+  color: black;
+}
+
+a img:hover {
+  opacity: 0.5;
+  width: 20.5%;
+  height: auto;
+  transition: .5s ease;
+}
+/* 
+  6.The text input shows us when it has been interacted with, both on hover and focus
+  source:https://css-tricks.com/css-link-hover-effects/
+*/
+
+input:hover{
+  background-color: lightgray;
+}
+
+input:focus{
+  background-color: beige;
+}
+
+/*4.Add a different hover and focus state styling to the image as a link.
+  source: https://www.w3schools.com/howto/howto_css_image_overlay_zoom.asp*/
+.container-image-link {
+  position: relative;
+  width: 250px;
+}
+
+
+.image {
+  width: 250px;
+  height: 190px;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: lightgrey;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+ 
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+.topnav {
+  overflow: hidden;
+  background-color:beige;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.colorBlack {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.colorBeige{
+  display: inline-block;
+  padding: 0.5rem;
+  color: #000000;
+  background-color: #f4f0e0;
+  text-decoration: none;
+}
+
+.colorWhite {
+  display: inline-block;
+  padding: 0.5rem;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+.addtocart{
+  display: inline-block;
+  padding: 1rem;
+  color: black;
+  height: 50px;
+  width: 323px;
+  background-color: rgb(251,249,247);
+  text-decoration-color: white;
+  transition-property: lightgray; 
+  border: 1px solid #000000;
+  transition-duration: 0.5s;
+  text-align: center;
+}
+
+.addtocart b:hover ,.addtocart b:focus{
+  background-color: lightgray;
+}
+
+.block1 {
+  height: 120px;
+  width: 500px;
+  border: 1px solid #000000;
+  background-color: white; 
+  text-align: center;
+}
+
+.block2 {
+  height: 120px;
+  width: 500px;
+  border: 1px solid white;
+  background-color: black; 
+  color: white;
+  text-align: center;
+}
+
+.block3 {
+  height: 120px;
+  width: 500px;
+  border: 1px solid black;
+  background-color: lightgray; 
+  color: black;
+  text-align: center;
+}
+
+.block4 {
+  height: 120px;
+  width: 500px;
+  border: 1px solid black;
+  background-color: #f8f8f8; 
+  color: black;
+  text-align: center;
+}
+
+/* Payment Form */
+.container-payment-form-cart {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+  
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+  
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+  
+.checkoutbtn{
+  background-color: black;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+  
+.checkoutbtn:hover {
+  background-color: white;
+  border-radius: 3px black;
+  color: black;
+}
+  
+hr {
+  border: 1px solid lightgrey;
+}
+  
+span.price {
+  float: right;
+  color: #000000;
+}
+/* end of payment form */
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-inspo {
+  flex-basis: 30%; 
+  height: 300px;
+  width: auto;
+  object-fit: contain;
+  padding: 20px 0px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-item {
+  /* flex-basis: 45%; */
+  width: 300px;
+  margin: 20px 45px;
+  background-color: #f2f2f2;
+  border: 1px transparent #0c0906;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: left;
+  font-family: "PostGrotesk";
+  transition: border-color 0.3s;
+}
+
+.product-item:hover {
+  border: 1px solid #0c0906;
+  margin-bottom: 30px;
+}
+
+
+.product-image {
+  width: 100% !important;
+  height: auto;
+  margin-top: 10%;
+}
+
+a img {
+  width: 20%;
+  height: auto;
+}
+
