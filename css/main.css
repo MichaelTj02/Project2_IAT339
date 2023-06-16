@@ -53,45 +53,6 @@ body {
   padding: 2rem;
 }
 
-/*top navigation*/
-
-.top-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.top-nav li {
-  display: inline-block;
-  position: relative;
-  margin-right: 10px;
-}
-
-.top-nav li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.top-nav li::after {
-  content: "";
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: transparent;
-  bottom: -7px;
-  left: 50%;
-  top: 35px;
-  transform: translateX(-50%);
-  transition: background-color 0.3s ease;
-}
-
-
-
-.top-nav li:hover::after {
-  background-color: #000;
-}
-
 p:not(.price) {
   font-family: "relativemono", serif;
   font-size: 16px;
@@ -253,25 +214,41 @@ input:focus{
   COMBINED ELEMENTS -------------------
 */
 
-.topnav {
-  overflow: hidden;
-  background-color:beige;
+/*top navigation*/
+
+.top-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
+.top-nav li {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.top-nav li a {
   text-decoration: none;
-  font-size: 17px;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
+  color: #333;
 }
 
-.topnav a:hover {
-  background-color: black;
-  color: white;
+.top-nav li::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: transparent;
+  bottom: -7px;
+  left: 50%;
+  top: 35px;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.top-nav li:hover::after {
+  background-color: #000;
 }
 
 .column {
