@@ -34,9 +34,8 @@ h2 {
 
 h3 {
   font-family: "PostGrotesk", serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 22px;
   margin-bottom: 1rem;
 }
 
@@ -53,6 +52,11 @@ body {
   padding: 2rem;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 p:not(.price) {
   font-family: "relativemono", serif;
   font-size: 16px;
@@ -60,8 +64,8 @@ p:not(.price) {
   letter-spacing: 0.05em;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 0;
-  max-width: 40%;
+  margin-bottom: 0.5rem;
+  max-width: 70%;
 }
 
 label {
@@ -86,6 +90,23 @@ button [type=submit]{
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 0;
+}
+
+.button-style {
+  background-color: #000;
+  color: white;
+  border: 1px solid black;
+  font-family: "PostGrotesk", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.8rem 1.7rem;
+}
+
+.button-style:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition-duration: 0.3s;
 }
 
 
@@ -157,10 +178,6 @@ a img:hover {
   source:https://css-tricks.com/css-link-hover-effects/
 */
 
-input:hover{
-  background-color: lightgray;
-}
-
 input:focus{
   background-color: beige;
 }
@@ -218,6 +235,9 @@ input:focus{
   text-align: center;
 }
 
+.cart-div {
+  width: 40%;
+}
 
 /* 
   TEXT ELEMENTS -------------------
@@ -279,6 +299,53 @@ input:focus{
   clear: both;
   display: table;
 }
+
+/* Product Description */
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #767C7C;}
+
+/* drop down taken from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .colorBlack {
   display: inline-block;
@@ -377,67 +444,93 @@ input:focus{
  
 
 /* Payment Form */
-.container-payment-form-cart {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-}
   
+span.price {
+  float: right;
+  color: #000;
+} 
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-50,
+.col-75 {
+  padding: 0 50px;
+}
+
+.container1 {
+  background-color: #F3F4F1;
+  display: inline-block;
+  border: 1px transparent #0c0906;
+}
+
+.container2 {
+  background-color: white;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid #0c0906;
+}
+
+.container3 {
+  background-color: #F3F4F1;
+  padding: 40px;
+  display: inline-block;
+  border: 1px transparent #0c0906;
+}
+
 input[type=text] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: 1px solid #CECDC8;
 }
-  
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
 .icon-container {
   margin-bottom: 20px;
   padding: 7px 0;
   font-size: 24px;
 }
-  
-.checkoutbtn{
-  background-color: black;
+
+.btn {
+  background-color: #0c0906;
   color: white;
   padding: 12px;
   margin: 10px 0;
-  width: 100%;
   border: none;
-  border-radius: 3px;
+  width: 100%;
+  border: 1px solid #0c0906;
   cursor: pointer;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
+  font-size: 17px;
 }
-  
-.checkoutbtn:hover {
+
+.btn:hover {
   background-color: white;
-  border-radius: 3px black;
-  color: black;
-}
-  
-hr {
-  border: 1px solid lightgrey;
-}
-  
-span.price {
-  float: right;
-  color: #000000;
+  color: #0c0906;
 }
 /* end of payment form */
 
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.image-inspo {
-  flex-basis: 30%; 
-  height: 300px;
-  width: auto;
-  object-fit: contain;
-  padding: 20px 0px;
+.listing-img {
+  width: 40%;
+  height: auto;
 }
 
 .product-grid {
@@ -447,28 +540,56 @@ span.price {
 }
 
 .product-item {
-  /* flex-basis: 45%; */
-  width: 300px;
+  background-color: #F3F4F1;
+  width: 350px;
   margin: 20px 45px;
-  background-color: #f2f2f2;
   border: 1px transparent #0c0906;
   padding-left: 2%;
   padding-right: 2%;
-  text-align: left;
-  font-family: "PostGrotesk";
+  text-align: center;
   transition: border-color 0.3s;
 }
 
-.product-item:hover {
-  border: 1px solid #0c0906;
-  margin-bottom: 30px;
-}
-
-
 .product-image {
-  width: 100% !important;
+  width: 70% !important;
   height: auto;
   margin-top: 10%;
+}
+
+.product-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none !important;
+  color: #000;
+}
+
+.product-price {
+  color: #000;
+  font-size: 14px;
+}
+
+.add-to-cart-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  transition-duration: 0.5s;
+}
+
+.product-link {
+  cursor: pointer;
+}
+
+.product-button {
+  width: 100%;
 }
 
 a img {
