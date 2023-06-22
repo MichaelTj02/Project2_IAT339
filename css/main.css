@@ -59,7 +59,7 @@ img {
 
 p:not(.price) {
   font-family: "relativemono", serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 410;
   letter-spacing: 0.05em;
   line-height: 150%;
