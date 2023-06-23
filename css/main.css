@@ -47,6 +47,14 @@ h4 {
   margin-bottom: 0;
 }
 
+h5 {
+  font-family: "PostGrotesk Light", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
 body {
   font-family: "relativemono", serif;
   padding: 2rem;
