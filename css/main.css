@@ -59,7 +59,7 @@ img {
 
 p:not(.price) {
   font-family: "relativemono", serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 410;
   letter-spacing: 0.05em;
   line-height: 150%;
@@ -254,7 +254,7 @@ input:focus{
 
 .top-nav {
   list-style-type: none;
-  margin: 0;
+  margin: 3rem;
   padding: 0;
 }
 
