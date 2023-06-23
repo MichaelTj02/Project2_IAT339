@@ -66,16 +66,31 @@
     grid-auto-flow: row dense;
 }
 
-.grid-product-list-rows {
-    grid-template-rows: repeat(3,minmax(0,1fr));
+.grid-product-list-col {
+    grid-template-columns: repeat(2,minmax(0,1fr));
 }
 
-.grid-product-list-col {
-    grid-template-columns: repeat(4,minmax(0,1fr));
+@media screen and (min-width: 900px) {
+    .grid-product-list-col {
+        grid-template-columns: repeat(4,minmax(0,1fr));
+    }
+    .grid-product-list-rows {
+        grid-template-rows: repeat(3,minmax(0,1fr));
+    }
 }
 
 .grid-product-list-col-span2 {
     grid-column: span 2/span 2;
+}
+
+.grid-product-list-row-span2 {
+    grid-row: span 2/span 2;
+}
+
+@media screen and (min-width: 900px){
+    .grid-product-list-big-product {
+        height: 100%;
+    }
 }
 
 .grid-product-list-text {
