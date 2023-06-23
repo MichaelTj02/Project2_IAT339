@@ -27,8 +27,8 @@
         <li><a href="index.html">Style Guide</a></li>
         <li><a href="home.html">Home</a></li>
         <li><a href="checkout.html">Checkout Template</a></li>
-        <li><a href="product-description.html">Product Description</a></li>
         <li><a href="product-listing-page.html">Product Listing Page</a></li>
+        <li><a href="product-description.html">Product Description</a></li>
       </div>
     </nav>
 
@@ -169,23 +169,24 @@
       </section>
 
       <!--taken from : https://www.w3schools.com/howto/howto_css_three_columns.asp-->
-      <!-- <section class="element">
+      <section class="element">
         <h3>Product/Service Listing</h3>
-        <br>
+
         <div class="product-grid">
           <div class="product-item">
             <img src="images/vitc.png" alt="Product 1" class="product-image">
             <h4>Radiance Serum 
               with 11% Vitamin C - from $15.50</h4>
-              <input type="submit" value="quickview" class="paymentbutton button-style">
+              <input type="submit" value="quickview" class="paymentbutton">
           </div>
         
           <div class="product-item">
             <img src="Images/image4.jpg" alt="image4" class="product-image">
             <h4>Hydrolate 
               Organic Peppermint - $10.50</h4>
-              <input type="submit" value="quickview" class="paymentbutton button-style">
+              <input type="submit" value="quickview" class="paymentbutton">
           </div>
+        </a>
         </div>
       </section> -->
 
@@ -254,69 +255,72 @@
       </section>
 
 <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
-      <!-- <section class="element">
+      <section class="element">
         <h3>Payment Form</h3>
-        <div class="row">
+        <div class="payment-div">
+          <div class="row">
             <div class="col-75">
-              <div class="container-payment-form-cart">
+              <div class="container3">
                 <form action="/action_page.php">
-                
+
                   <div class="row">
                     <div class="col-50">
                       <h3>Billing Address</h3>
-                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                      <input type="text" id="email" name="email" placeholder="john@example.com">
-                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                      <label for="city"><i class="fa fa-institution"></i> City</label>
-                      <input type="text" id="city" name="city" placeholder="New York">
-          
+                      <label for="fname">Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Jane Doe">
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="email" placeholder="jane@example.com">
+                      <label for="adr">Address</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W Pender Street">
+                      <label for="city">City</label>
+                      <input type="text" id="city" name="city" placeholder="Vancouver">
+
                       <div class="row">
                         <div class="col-50">
                           <label for="state">State</label>
-                          <input type="text" id="state" name="state" placeholder="NY">
+                          <input type="text" id="state" name="state" placeholder="BC">
                         </div>
                         <div class="col-50">
                           <label for="zip">Zip</label>
-                          <input type="text" id="zip" name="zip" placeholder="10001">
+                          <input type="text" id="zip" name="zip" placeholder="V5A 1L2">
                         </div>
                       </div>
                     </div>
-          
+
                     <div class="col-50">
                       <h3>Payment</h3>
                       <label for="fname">Accepted Cards</label>
-                      <div class="icon-container">
-                        <i class="fa fa-cc-visa" style="color:navy;"></i>
-                        <i class="fa fa-cc-amex" style="color:blue;"></i>
-                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                        <i class="fa fa-cc-discover" style="color:orange;"></i>
-                      </div>
+                      <label class="container1" id="payment-padding">
+                        <input type="radio" checked="checked" name="radio">&nbsp;&nbsp;<i class="fa fa-cc-visa" style="color:navy;"></i>&nbsp;&nbsp;Visa
+                      </label>
+                      <label class="container1" id="payment-padding">
+                        <input type="radio" name="radio">&nbsp;&nbsp;<i class="fa fa-cc-mastercard" style="color:red;"></i>&nbsp;&nbsp;Mastercard
+                      </label>
+                      <label class="container1" id="payment-padding">
+                        <input type="radio" name="radio">&nbsp;&nbsp;<i class="fa fa-cc-amex" style="color:blue;"></i>&nbsp;&nbsp;American Express
+                      </label>
                       <label for="cname">Name on Card</label>
-                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <input type="text" id="cname" name="cardname" placeholder="Jane Doe">
                       <label for="ccnum">Credit card number</label>
-                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                      <label for="expmonth">Exp Month</label>
-                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+
                       <div class="row">
                         <div class="col-50">
-                          <label for="expyear">Exp Year</label>
-                          <input type="text" id="expyear" name="expyear" placeholder="2018">
+                          <label for="expyear">Expiry</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="MM/YY">
                         </div>
                         <div class="col-50">
                           <label for="cvv">CVV</label>
-                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                          <input type="text" id="cvv" name="cvv" placeholder="XXX">
                         </div>
                       </div>
                     </div>
-                    
+
                   </div>
                   <label>
                     <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                   </label>
-                  <input type="submit" value="CONTINUE TO CHECKOUT" class="checkoutbtn">
+                  <input type="submit" value="Continue to checkout" class="checkoutbtn">
                 </form>
               </div>
             </div>
