@@ -21,26 +21,35 @@
 
 h1 {
   font-family: "PostGrotesk Medium", serif;
-  font-size: 5rem;
+  font-size: 3rem;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 h2 {
   font-family: "PostGrotesk", serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0;
 }
 
 h3 {
   font-family: "PostGrotesk", serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
 h4 {
   font-family: "PostGrotesk", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+/* for product listing page font */
+h5 {
+  font-family: "PostGrotesk Light", serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 22px;
@@ -90,6 +99,23 @@ button [type=submit]{
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 0;
+}
+
+.button-style {
+  background-color: #000;
+  color: white;
+  border: 1px solid black;
+  font-family: "PostGrotesk", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.8rem 1.7rem;
+}
+
+.button-style:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition-duration: 0.3s;
 }
 
 
@@ -161,10 +187,6 @@ a img:hover {
   source:https://css-tricks.com/css-link-hover-effects/
 */
 
-input:hover{
-  background-color: lightgray;
-}
-
 input:focus{
   background-color: beige;
 }
@@ -182,6 +204,22 @@ input:focus{
   height: 190px;
 }
 
+.button-style { 
+  background-color: #000; 
+  color: white; 
+  border: 1px solid black; 
+  font-family: "PostGrotesk", serif; 
+  font-size: 1rem; 
+  font-weight: 400; 
+  padding: 0.8rem 1.7rem; 
+} 
+ 
+.button-style:hover { 
+  background-color: white; 
+  color: black; 
+  border: 1px solid black; 
+  transition-duration: 0.3s; 
+} 
 
 .overlay {
   position: absolute;
@@ -206,6 +244,9 @@ input:focus{
   text-align: center;
 }
 
+.cart-div {
+  width: 40%;
+}
 
 /* 
   TEXT ELEMENTS -------------------
@@ -222,7 +263,7 @@ input:focus{
 
 .top-nav {
   list-style-type: none;
-  margin: 0;
+  margin: 3rem;
   padding: 0;
 }
 
@@ -357,17 +398,23 @@ input:focus{
   background-color: lightgray;
 }
 
+.colour-container1 { 
+  height: 200px; 
+  width: 200px; 
+  background-color: white; 
+  margin: 5px 20px 15px 20px; 
+  padding: 0px; 
+  border: 1px solid #000; 
+  display: inline-block; 
+} 
+
 .block1 {
-  height: 120px;
-  width: 500px;
   border: 1px solid #000000;
   background-color: white; 
   text-align: center;
 }
 
 .block2 {
-  height: 120px;
-  width: 500px;
   border: 1px solid white;
   background-color: black; 
   color: white;
@@ -375,8 +422,6 @@ input:focus{
 }
 
 .block3 {
-  height: 120px;
-  width: 500px;
   border: 1px solid black;
   background-color: lightgray; 
   color: black;
@@ -384,76 +429,117 @@ input:focus{
 }
 
 .block4 {
-  height: 120px;
-  width: 500px;
   border: 1px solid black;
   background-color: #f8f8f8; 
   color: black;
   text-align: center;
 }
 
+/* Colour Palatte */
+.palette-p { 
+  width: 100%; 
+  font-size: 12px !important; 
+  color: black; 
+  text-align: center; 
+  flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+} 
+ 
+.white-text { 
+  color: white; 
+} 
+ 
+
 /* Payment Form */
-.container-payment-form-cart {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-}
   
+span.price {
+  float: right;
+  color: #000;
+} 
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-50,
+.col-75 {
+  padding: 0 50px;
+}
+
+.container1 {
+  background-color: #F3F4F1;
+  display: inline-block;
+  border: 1px transparent #0c0906;
+}
+
+.container2 {
+  background-color: white;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid #0c0906;
+}
+
+.container3 {
+  background-color: #F3F4F1;
+  padding: 40px;
+  display: inline-block;
+  border: 1px transparent #0c0906;
+}
+
 input[type=text] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: 1px solid #CECDC8;
 }
-  
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
 .icon-container {
   margin-bottom: 20px;
   padding: 7px 0;
   font-size: 24px;
 }
-  
-.checkoutbtn{
-  background-color: black;
+
+.btn {
+  background-color: #0c0906;
   color: white;
   padding: 12px;
   margin: 10px 0;
-  width: 100%;
   border: none;
-  border-radius: 3px;
+  width: 100%;
+  border: 1px solid #0c0906;
   cursor: pointer;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
+  font-size: 17px;
 }
-  
-.checkoutbtn:hover {
+
+.btn:hover {
   background-color: white;
-  border-radius: 3px black;
-  color: black;
-}
-  
-hr {
-  border: 1px solid lightgrey;
-}
-  
-span.price {
-  float: right;
-  color: #000000;
+  color: #0c0906;
 }
 /* end of payment form */
 
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.image-inspo {
-  flex-basis: 30%; 
-  height: 300px;
-  width: auto;
-  object-fit: contain;
-  padding: 20px 0px;
+.listing-img {
+  width: 40%;
+  height: auto;
 }
 
 .product-grid {
@@ -463,32 +549,161 @@ span.price {
 }
 
 .product-item {
-  /* flex-basis: 45%; */
-  width: 300px;
+  background-color: #F3F4F1;
+  width: 350px;
   margin: 20px 45px;
-  background-color: #f2f2f2;
   border: 1px transparent #0c0906;
   padding-left: 2%;
   padding-right: 2%;
-  text-align: left;
-  font-family: "PostGrotesk";
+  text-align: center;
   transition: border-color 0.3s;
 }
 
-.product-item:hover {
-  border: 1px solid #0c0906;
-  margin-bottom: 30px;
-}
-
-
 .product-image {
-  width: 100% !important;
+  width: 70% !important;
   height: auto;
   margin-top: 10%;
+}
+
+.product-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none !important;
+  color: #000;
+}
+
+.product-price {
+  color: #000;
+  font-size: 14px;
+}
+
+.add-to-cart-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  transition-duration: 0.5s;
+}
+
+.product-link {
+  cursor: pointer;
+}
+
+.product-button {
+  width: 100%;
 }
 
 a img {
   width: 20%;
   height: auto;
 }
+
+/* Footer */
+
+.footer-header-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer-header-container h3 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .footer-header-container{
+    max-width: 1240px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-header-container h3{
+    font-size: 2rem;
+  }
+}
+
+footer {
+  display: block;
+  position: relative;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) { 
+  footer { 
+      padding-top: 5rem; 
+  }
+} 
+
+.footer-content-container {
+  background-color: #303030;
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.footer-content-container h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-content-container p {
+  color: white;
+  max-width: 90%;
+}
+
+@media screen and (min-width: 1240px) { 
+  .footer-content-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}  
+
+.footer-grid-container {
+  display: grid;
+  margin-top: 1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.footer-grid-cols {
+  grid-template-columns: repeat(1,minmax(0,1fr));
+}
+
+@media screen and (min-width: 900px) { 
+  .footer-grid-container { 
+      margin-top: 4.5rem; 
+      grid-column-gap: 1.25rem;
+      column-gap: 1.25rem;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .footer-grid-cols {
+    grid-template-columns: repeat(5,minmax(0,1fr));
+  }
+  .footer-grid-cols-span2 { 
+    grid-column: span 2/span 2; 
+  } 
+} 
+
+@media screen and (min-width: 1240px) { 
+  .footer-grid-container {
+    max-width: 1240px;
+  }
+}  
+
+/* end of Footer */
 
