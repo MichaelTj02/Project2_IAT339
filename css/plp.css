@@ -130,6 +130,33 @@
     margin-bottom: 20px;
 }
 
+/*filter for products */
+
+.filter-nav {
+    display: flex;
+    justify-content: space-between;
+    display:inline-block;
+    text-align: center;
+  }
+
+.filter-div {
+    margin: 2rem 2.5rem 2rem 2rem;;
+    display: flex;
+    justify-content: center;
+  }
+
+  .filter-nav a {
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size: 1.6rem;
+  }
+
+  .filter-nav a:hover {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+  }
+
 /* .grid-product-list-gap {
     grid-gap: 1.25rem;
     gap: 1.25rem;
