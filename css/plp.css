@@ -1,5 +1,50 @@
 /* product listing page */
 
+/* PLP Banner */
+
+.banner-container-plp{
+    position: relative;
+}
+  
+.banner-container-plp img {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+.banner-content-container-plp {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 1240px) { 
+    .banner-content-container-plp { 
+        max-width: 1240px; 
+        padding-right: 3rem; 
+        padding-left: 3rem; 
+    } 
+} 
+
+.banner-content-plp {
+    color: black;
+}
+  
+.banner-content-plp h1 {
+    font-size: 70px;
+}
+  
+.banner-content-plp p {
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+/* End of PLP Banner */
+
+
+
 .product-listing-card {
     width: 100%;
     text-align: left;
@@ -98,37 +143,6 @@
     padding-right: 6rem;
 }
 
-.banner-container-plp{
-    position: relative;
-    height: 400px; /* Adjust the height as needed */
-  }
-  
-.banner-container-plp img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-.banner-content-plp {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: left;
-    color: black;
-  }
-  
-.banner-content-plp h1 {
-    font-size: 70px;
-    color: black;
-    justify-content: left;
-    margin-bottom: 10px;
-  }
-  
-.banner-content-plp p {
-    font-size: 11px;
-    margin-bottom: 20px;
-}
 
 /*filter for products */
 
