@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Product Description Flexbox */
+
+.flex-container-product-description {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #faf8f2;
+  padding: 2rem;
+  justify-content: space-around;
+}
+
+.product-description-image {
+  height: auto;
+}
+
+.product-description-text {
+  flex: 60%;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .product-description-image img {
+    /* set a minimum image width */
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .product-description-image img {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .product-description-image {
+    flex: 40%;
+  /* stop adding space between image and text */
+  }
+  .product-description-text {
+    /* stop paragraph width from growing */
+  }
+}
+
+/* End of Product Description Flexbox */
+
+ /* Checkout Flexbox */
+ .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+/* end of checkout flexbox */
+
+body {
+  padding: 2rem;
+}
