@@ -703,19 +703,21 @@ a img {
 }
 
 .footer-header-container h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  max-width: 300px;
 }
 
 @media screen and (min-width: 900px) {
   .footer-header-container{
     max-width: 1240px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin-left: auto;
     margin-right: auto;
   }
   .footer-header-container h3{
-    font-size: 2rem;
+    font-size: 1.4rem;
+    max-width: 500px;
   }
 }
 
@@ -723,7 +725,6 @@ footer {
   display: block;
   position: relative;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
   width: 100%;
 }
 
