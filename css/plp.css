@@ -72,7 +72,7 @@
  
 @media screen and (min-width: 900px) { 
     .grid-product-list-col { 
-        grid-template-columns: repeat(4,minmax(0,1fr)); 
+        grid-template-columns: repeat(3,minmax(0,1fr)); 
     } 
     .grid-product-list-rows { 
         grid-template-rows: repeat(3,minmax(0,1fr)); 
