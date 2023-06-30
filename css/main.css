@@ -141,6 +141,56 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
+/* Top nav for Style Guide */
+
+.top-nav {
+  list-style-type: none;
+  margin: 3rem;
+  padding: 0;
+}
+
+.top-nav li {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.top-nav li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.top-nav li::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: transparent;
+  bottom: -7px;
+  left: 50%;
+  top: 35px;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.top-nav li:hover::after {
+  background-color: #000;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* Styling for the navigation button */
 .button-nav {
   display: inline-block;
@@ -258,30 +308,36 @@ input:focus{
   COMBINED ELEMENTS -------------------
 */
 
-/*top navigation*/
+/* Final Top Navigation */
 
-.top-nav {
+.navbar-div {
+  margin: 2rem 2.5rem 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-nav {
   list-style-type: none;
-  margin: 3rem;
   padding: 0;
 }
 
-.top-nav li {
+.left-nav li {
   display: inline-block;
   position: relative;
-  margin-right: 10px;
+  margin-right: 1.5rem;
 }
 
-.top-nav li a {
+.left-nav li a {
   text-decoration: none;
   color: #333;
+  font-size: 0.9rem;
 }
 
-.top-nav li::after {
+.left-nav li::after {
   content: "";
   position: absolute;
-  width: 7px;
-  height: 7px;
+  width: 5.5px;
+  height: 5.5px;
   border-radius: 50%;
   background-color: transparent;
   bottom: -7px;
@@ -291,22 +347,56 @@ input:focus{
   transition: background-color 0.3s ease;
 }
 
-.top-nav li:hover::after {
+.left-nav li:hover::after {
   background-color: #000;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+.middle-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.logo-img {
+  width: 6.5rem;
+  text-align: center;
 }
+
+.heart-logo {
+  width: 1rem;
+}
+
+.search-icon {
+  width: 1rem;
+}
+
+.heart-logo:hover,
+.search-icon:hover {
+  width: 1rem !important;
+}
+
+.right-nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-nav {
+  display: inline-block;
+  position: relative;
+}
+
+.right-nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* End of final top navigation */
+
 
 /* Product Description */
 
