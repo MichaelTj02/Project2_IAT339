@@ -121,7 +121,7 @@
         grid-template-columns: repeat(3,minmax(0,1fr)); 
     } 
     .grid-product-list-rows { 
-        grid-template-rows: repeat(3,minmax(0,1fr)); 
+        grid-template-rows: repeat(2,minmax(0,1fr)); 
     } 
 } 
  
