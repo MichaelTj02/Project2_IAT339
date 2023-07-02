@@ -19,3 +19,10 @@
     src: url('../fonts/PostGrotesk-Medium.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'PostGrotesk Light';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/PostGrotesk-Light.otf') format('truetype');
+}
+
