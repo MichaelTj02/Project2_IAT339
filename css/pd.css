@@ -178,3 +178,25 @@
 }
 
 /* End of grid for product description */
+
+.product-description-content-container {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-right: 1rem; 
+    padding-left: 1rem; 
+} 
+
+@media screen and (min-width: 900px) { 
+    .product-description-content-container { 
+        max-width: 1240px; 
+        padding-right: 3rem; 
+        padding-left: 3rem; 
+    } 
+} 
+
+.big-text {
+    font-family: "relativemono", serif;
+    font-size: 1.5rem;
+}
