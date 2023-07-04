@@ -44,29 +44,25 @@
 }
 
 .product-description-image {
-    width: 100%;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding: 3rem;
     position: relative;
 }
 
-@media screen and (min-width: 700px) {
-    .product-description-image {
-        max-width: 680px;
-    }
-}
-
 @media screen and (min-width: 900px) {
     .product-description-image {
-        padding-top: 10rem;
+        max-width: 800px;
+        padding-top: 7rem;
         padding-bottom: 7rem;
     }
 }
 
 @media screen and (min-width: 1240px) {
     .product-description-image {
-        padding-top: 15rem;
+        max-width: 1200px;
+        padding-top: 17rem;
     }
 }
 
@@ -174,6 +170,11 @@
 .product-description-form-content p {
     font-size: 0.75rem;
     max-width: 100%;
+}
+
+.product-description-add-to-cart {
+    margin-top: 1.5rem;
+    border-color: #A8A7A2;
 }
 
 /* End of grid for product description */
