@@ -44,30 +44,137 @@
 }
 
 .product-description-image {
-    width: 100%;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding: 3rem;
     position: relative;
 }
 
-@media screen and (min-width: 700px) {
-    .product-description-image {
-        max-width: 680px;
-    }
-}
-
 @media screen and (min-width: 900px) {
     .product-description-image {
-        padding-top: 10rem;
+        max-width: 800px;
+        padding-top: 7rem;
         padding-bottom: 7rem;
     }
 }
 
 @media screen and (min-width: 1240px) {
     .product-description-image {
-        padding-top: 15rem;
+        max-width: 1200px;
+        padding-top: 17rem;
     }
+}
+
+.product-description-form-grid-container {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 900px) { 
+    .product-description-form-grid-container { 
+        grid-column: span 6/span 6;
+        padding-top: 6rem;
+        padding-bottom: 2.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    } 
+}
+
+@media screen and (min-width: 1240px) { 
+    .product-description-form-grid-container { 
+        grid-column: span 5/span 5;
+    } 
+}
+
+.product-description-form-container {
+    width: 100%;
+    max-width: 24rem;
+    margin: auto;
+}
+
+.product-description-form {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+    .product-description-form {
+        border-style: solid;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-color: #CECDC9;
+    }
+}
+
+.product-description-form-content {
+
+}
+
+@media screen and (min-width: 900px) {
+    .product-description-form-content {
+        padding-top: 2.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+.product-description-textbox-border {
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #A8A7A2;
+}
+
+.product-description-textbox {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: #A8A7A2;
+}
+
+.product-description-heading-title {
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.product-description-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.75rem;
+}
+
+.product-description-subtitle {
+    margin-top: 0.1rem;
+    font-size: 1.25rem;
+}
+
+.product-description-product-text{
+    font-size: 1rem;
+}
+
+.product-description-ingredients-title {
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+.product-description-form-content p {
+    font-size: 0.75rem;
+    max-width: 100%;
+}
+
+.product-description-add-to-cart {
+    margin-top: 1.5rem;
+    border-color: #A8A7A2;
 }
 
 /* End of grid for product description */
