@@ -29,6 +29,8 @@
 .product-description-image-container {
     background-color: #F3F4F1;
     height: 40rem;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 900px) {
@@ -45,17 +47,16 @@
 
 .product-description-image {
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3rem;
-    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    left: 50%;
 }
 
 @media screen and (min-width: 900px) {
     .product-description-image {
         max-width: 800px;
-        padding-top: 7rem;
-        padding-bottom: 7rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
 }
 
@@ -63,6 +64,7 @@
     .product-description-image {
         max-width: 1200px;
         padding-top: 17rem;
+        padding-bottom: 17rem
     }
 }
 
@@ -293,9 +295,10 @@
 }
 
 .product-description-content-grid-review-image img {
+    object-fit: cover;
     max-width: 100%;
     min-height: 0;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
