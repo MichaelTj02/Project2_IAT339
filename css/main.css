@@ -54,11 +54,11 @@ h5 {
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 body {
   font-family: "relativemono", serif;
-  padding: 2rem;
 }
 
 img {
@@ -142,6 +142,56 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
+/* Top nav for Style Guide */
+
+.top-nav {
+  list-style-type: none;
+  margin: 3rem;
+  padding: 0;
+}
+
+.top-nav li {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.top-nav li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.top-nav li::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: transparent;
+  bottom: -7px;
+  left: 50%;
+  top: 35px;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.top-nav li:hover::after {
+  background-color: #000;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* Styling for the navigation button */
 .button-nav {
   display: inline-block;
@@ -176,11 +226,13 @@ a:hover {
   color: black;
 }
 
-a img:hover {
-  opacity: 0.5;
-  width: 20.5%;
+a img {
+  width: 100%;
   height: auto;
-  transition: .5s ease;
+}
+
+a img:hover, a img:focus, a img:active {
+  height: auto;
 }
 /* 
   6.The text input shows us when it has been interacted with, both on hover and focus
@@ -259,30 +311,36 @@ input:focus{
   COMBINED ELEMENTS -------------------
 */
 
-/*top navigation*/
+/* Final Top Navigation */
 
-.top-nav {
+.navbar-div {
+  margin: 2rem 2.5rem 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-nav {
   list-style-type: none;
-  margin: 3rem;
   padding: 0;
 }
 
-.top-nav li {
+.left-nav li {
   display: inline-block;
   position: relative;
-  margin-right: 10px;
+  margin-right: 1.5rem;
 }
 
-.top-nav li a {
+.left-nav li a {
   text-decoration: none;
   color: #333;
+  font-size: 0.9rem;
 }
 
-.top-nav li::after {
+.left-nav li::after {
   content: "";
   position: absolute;
-  width: 7px;
-  height: 7px;
+  width: 5.5px;
+  height: 5.5px;
   border-radius: 50%;
   background-color: transparent;
   bottom: -7px;
@@ -292,22 +350,56 @@ input:focus{
   transition: background-color 0.3s ease;
 }
 
-.top-nav li:hover::after {
+.left-nav li:hover::after {
   background-color: #000;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+.middle-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.logo-img {
+  width: 6.5rem;
+  text-align: center;
 }
+
+.heart-logo {
+  width: 1rem;
+}
+
+.search-icon {
+  width: 1rem;
+}
+
+.heart-logo:hover,
+.search-icon:hover {
+  width: 1rem !important;
+}
+
+.right-nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-nav {
+  display: inline-block;
+  position: relative;
+}
+
+.right-nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* End of final top navigation */
+
 
 /* Product Description */
 
@@ -599,11 +691,7 @@ label {
 
 .product-button {
   width: 100%;
-}
-
-a img {
-  width: 20%;
-  height: auto;
+  font-size: 0.8rem;
 }
 
 /* Footer */
@@ -614,19 +702,21 @@ a img {
 }
 
 .footer-header-container h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  max-width: 450px;
 }
 
 @media screen and (min-width: 900px) {
   .footer-header-container{
     max-width: 1240px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin-left: auto;
     margin-right: auto;
   }
   .footer-header-container h3{
-    font-size: 2rem;
+    font-size: 1.4rem;
+    max-width: 500px;
   }
 }
 
@@ -634,13 +724,23 @@ footer {
   display: block;
   position: relative;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
   width: 100%;
+}
+
+footer hr {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 900px) { 
   footer { 
-      padding-top: 5rem; 
+      padding-top: 2rem; 
+  }
+
+  footer hr {
+    max-width: 800px;
   }
 } 
 
@@ -704,6 +804,44 @@ footer {
     max-width: 1240px;
   }
 }  
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  margin-top: 0.8rem;
+}
+
+footer a {
+  font-family: "relativemono", serif;
+  font-size: 1rem;
+  font-weight: 410;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #979797;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+footer a:hover, footer a:focus, footer a:active {
+  color: #FFFFFF;
+}
+
+footer input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #CECDC8;
+  color: white;
+  background-color:#303030; 
+}
+
+.newsletter p{
+  font-size: 0.7rem;
+}
 
 /* end of Footer */
 

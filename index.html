@@ -8,7 +8,7 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/flexbox.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -156,16 +156,28 @@
 
       <section class="element">
         <h3>Main Navigation</h3>
-        <nav> 
-          <div class="top-nav">
-            <li><a href="index.html">Style Guide</a></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="checkout.html">Checkout Template</a></li>
-              <li><a href="product-description.html">Product Description</a></li>
-            <li><a href="product-listing-page.html">Product Listing Page</a></li>
+        <nav>
+          <div class="navbar-div">
+            <div class="left-nav">
+                <li><a href="product-listing-page.html">Products</a></li>
+                <li><a href="index.html">Diagnostic</a></li>
+                <li><a href="index.html">Ingredient</a></li>
+                <li><a href="index.html">About</a></li>
+            </div>
+      
+            <div class="middle-nav">
+                <img src="images/logo.png" alt="logo" class="logo-img">
+            </div>
+      
+            <div class="right-nav">
+                <a href=""><img src="images/searchlogo.png" alt="search bar icon" class="search-icon"></a>
+                <a href="product-listing-page.html"><img src="images/heartlogo.png" alt="wishlist" class="heart-logo"></a>
+                <a href="index.html">Login</a>
+                <a href="index.html">Cart 0</a>
+            </div>
           </div>
-        </nav>
-          <!-- taken from https://www.w3schools.com/howto/howto_js_topnav.asp -->
+      </nav>
+          <!-- learnt from https://www.w3schools.com/howto/howto_js_topnav.asp -->
       </section>
 
       <!--taken from : https://www.w3schools.com/howto/howto_css_three_columns.asp-->
@@ -188,7 +200,7 @@
           </div>
         </a>
         </div>
-      </section> -->
+      </section>
 
       <section class="element" id="product-listing">
         <h3>Product/Service Listing</h3>
@@ -325,7 +337,7 @@
               </div>
             </div>
           </div>
-      </section> -->
+      </section>
 
       <section class="element" id="checkout">
         <h3>Payment Form</h3>
