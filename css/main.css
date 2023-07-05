@@ -144,28 +144,35 @@ code {
 
 /* Top nav for Style Guide */
 
-.top-nav {
+.navbar-div {
+  padding: 1rem 1.5rem 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.left-nav {
   list-style-type: none;
-  margin: 3rem;
   padding: 0;
 }
 
-.top-nav li {
+.left-nav li {
   display: inline-block;
   position: relative;
-  margin-right: 10px;
+  margin-right: 1.5rem;
 }
 
-.top-nav li a {
+.nav-text {
   text-decoration: none;
   color: #333;
+  font-size: 0.9rem;
 }
 
-.top-nav li::after {
+.left-nav li::after {
   content: "";
   position: absolute;
-  width: 7px;
-  height: 7px;
+  width: 5.5px;
+  height: 5.5px;
   border-radius: 50%;
   background-color: transparent;
   bottom: -7px;
@@ -175,22 +182,144 @@ code {
   transition: background-color 0.3s ease;
 }
 
-.top-nav li:hover::after {
+.left-nav li:hover::after {
   background-color: #000;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+.middle-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.logo-img {
+  width: 6rem;
+  text-align: center;
 }
+
+.heart-logo {
+  width: 1rem;
+}
+
+.search-icon {
+  width: 1rem;
+}
+
+.heart-logo:hover,
+.search-icon:hover {
+  width: 1rem !important;
+}
+
+.right-nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.right-nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .topnav {
+      display: none;
+  }
+
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropbtn {
+  display: none;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+/* Media query for screens less than 900px */
+@media (max-width: 900px) {
+  .navbar-div {
+      margin: -3rem 0rem;
+      margin-left: -2rem;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .left-nav {
+      display: none;
+  }
+
+  .nav-text {
+      font-size: 0.8rem;
+  }
+
+  .dropbtn {
+      background-color: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+  }
+
+  .dropdown {
+      position: relative;
+      display: inline-block;
+      padding: 1rem 1rem;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+      padding: 10px 16px;
+      display: block;
+  }
+
+  .dropdown-content a:hover {
+      background-color: rgb(234, 234, 234);
+  }
+
+  .dropdown:hover .dropbtn {
+      background-color: white;
+      text-decoration: underline;
+  }
+
+  .menu-icon { 
+      width: 2.5rem;
+  }
+
+  .logo-img {
+      width: 5rem;
+  }
+
+  .heart-logo {
+      display: none;
+  }
+
+  .hide-nav {
+      display: none;
+  }
+
+  .right-nav {
+      margin-top: 1rem;
+  }
+
+}
+
 
 /* Styling for the navigation button */
 .button-nav {

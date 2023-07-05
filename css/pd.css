@@ -29,6 +29,8 @@
 .product-description-image-container {
     background-color: #F3F4F1;
     height: 40rem;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 900px) {
@@ -45,17 +47,16 @@
 
 .product-description-image {
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3rem;
-    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    left: 50%;
 }
 
 @media screen and (min-width: 900px) {
     .product-description-image {
         max-width: 800px;
-        padding-top: 7rem;
-        padding-bottom: 7rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
 }
 
@@ -63,6 +64,7 @@
     .product-description-image {
         max-width: 1200px;
         padding-top: 17rem;
+        padding-bottom: 17rem
     }
 }
 
@@ -110,10 +112,6 @@
         border-bottom-width: 1px;
         border-color: #CECDC9;
     }
-}
-
-.product-description-form-content {
-
 }
 
 @media screen and (min-width: 900px) {
@@ -178,3 +176,129 @@
 }
 
 /* End of grid for product description */
+
+/* Content below product description */
+
+.product-description-content-container {
+    width: 100%;
+    margin-top: 3rem;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-right: 1rem; 
+    padding-left: 1rem; 
+} 
+
+@media screen and (min-width: 900px) { 
+    .product-description-content-container { 
+        max-width: 1240px; 
+        padding-right: 3rem; 
+        padding-left: 3rem; 
+    } 
+} 
+
+.big-text {
+    font-family: "relativemono", serif;
+    font-size: 1.5rem;
+}
+
+/* Grid for product description content */
+.product-description-content-grid-container {
+    display: grid;
+    margin-top: 4rem;
+}
+
+.product-description-content-grid-col {
+    grid-template-columns: repeat(1,minmax(0,1fr));
+}
+
+@media screen and (min-width: 900px) { 
+    .product-description-content-grid-col { 
+        grid-template-columns: repeat(7,minmax(0,1fr)); 
+    } 
+}
+
+@media screen and (min-width: 900px) { 
+    .product-description-content-grid-review { 
+        grid-column: span 3/span 3;
+    } 
+}
+
+.product-description-content-review-text-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (min-width: 900px) { 
+    .product-description-content-review-text-container { 
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+}
+
+@media screen and (min-width: 1600px) { 
+    .product-description-content-review-text-container { 
+        padding-left: 6rem;
+        padding-right: 6rem;
+    } 
+}
+
+.product-description-content-review-name {
+    font-size: 1.3rem;
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1240px) { 
+    .product-description-content-review-name { 
+        margin-top: 4rem;
+    } 
+}
+
+@media screen and (min-width: 1700px) { 
+    .product-description-content-review-name { 
+        margin-top: 10rem;
+    } 
+}
+
+.product-description-content-review-sub-description {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.product-description-content-review-text-container p {
+    font-size: 0.95rem;
+}
+
+.product-description-content-review-date {
+    font-size: 1rem;
+    color: #A8A7A2;
+    margin-bottom: 1rem;
+}
+
+.product-description-content-review-hyperlink {
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 900px) { 
+    .product-description-content-grid-review-image { 
+        grid-column: span 2/span 2;
+    } 
+}
+
+.product-description-content-grid-review-image img {
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Grid for product description content */
+
+/* End of content below product description */
+/* End of content below product description */
