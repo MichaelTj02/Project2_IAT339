@@ -33,13 +33,14 @@ carousel-container {
   }
 
   .best-seller-section {
-    background-color: #f5f5f5;
-    padding: 50px 0;
+    background-color: white;
+    padding: 100px 0;
   }
   
-  h2 {
-    text-align: center;
-    font-size: 36px;
+  h6 {
+    text-align: left;
+    font-size: 70px;
+    font-display: 'PostGrotesk Medium';
     margin-bottom: 20px;
   }
   
@@ -50,10 +51,11 @@ carousel-container {
   }
   
   .best-seller {
-    width: 300px;
+    width: 480px;
+    height: 655px;
     padding: 20px;
     margin: 20px;
-    background-color: #fff;
+    background-color: F3F4F1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
@@ -64,11 +66,7 @@ carousel-container {
     height: auto;
     margin-bottom: 10px;
   }
-  
-  h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
+
 
 .price {
   font-size: 18px;
