@@ -300,5 +300,79 @@
 
 /* Grid for product description content */
 
-/* End of content below product description */
+/* Grid for small PLP in Product Description */
+
+.plp-pdp-container { 
+    width: 100%; 
+    margin-top: 2rem; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-right: 1rem; 
+    padding-left: 1rem; 
+    padding-bottom: 2.25rem; 
+} 
+ 
+@media screen and (min-width: 900px) { 
+    .plp-pdp-container { 
+        margin-top: 3rem; 
+        padding-bottom: 4.5rem; 
+    } 
+} 
+ 
+@media screen and (min-width: 1240px) { 
+    .plp-pdp-container { 
+        max-width: 1240px; 
+        padding-right: 3rem; 
+        padding-left: 3rem; 
+    } 
+} 
+
+.product-description-plp-grid-col {
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    grid-gap: 1rem; 
+    gap: 1rem; 
+}
+
+@media screen and (min-width: 900px) { 
+    .product-description-plp-grid-col { 
+        grid-template-columns: repeat(3,minmax(0,1fr)); 
+        grid-gap: 1.25rem; 
+        gap: 1.25rem; 
+    } 
+}
+
+.pdp-product-listing-card {
+    width: 100%;
+    text-align: left;
+    background-color: #F3F4F1;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.pdp-product-listing-card-description-container {
+    display: flex;
+}
+
+.pdp-product-listing-card-desctiption {
+    flex: 70%;
+}
+
+.pdp-product-listing-card p{
+    margin: 0;
+}
+
+.pdp-product-listing-card h5 {
+    margin-bottom: 1rem;
+}
+
+.pdp-product-listing-card-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+
+/* End of grid for small PLP in Product Description */
+
+
 /* End of content below product description */
