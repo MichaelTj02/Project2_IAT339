@@ -7,57 +7,205 @@
 
         <link href="css/main.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
-        <link href="css/flexbox.css" rel="stylesheet">
         <link href="css/plp.css" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
     </head>
 
+    <header>
+
 
     <body>
-
-        <nav> 
-            <div class="top-nav">
-                <li><a href="index.html">Style Guide</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="checkout.html">Checkout Template</a></li>
-                <li><a href="product-description.html">Product Description</a></li>
-                <li><a href="product-listing-page.html">Product Listing Page</a></li>
+        <nav>
+            <div class="navbar-div">
+                <div class="left-nav">
+                    <li><a href="product-listing-page.html" class="nav-text">Products</a></li>
+                    <li><a href="index.html" class="nav-text">Diagnostic</a></li>
+                    <li><a href="index.html" class="nav-text">Ingredient</a></li>
+                    <li><a href="index.html" class="nav-text">About</a></li>
+                </div>
+    
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+                <div class="dropdown">
+                    <button class="dropdownbtn nav-text"><img src="images/burger-menu.png" alt="menu burger icon" class="menu-icon"></button>
+                    <div class="dropdown-content">
+                        <a href="product-listing-page.html" class="nav-text">Products</a>
+                        <a href="" class="nav-text">Diagnostic</a>
+                        <a href="" class="nav-text">Ingredient</a>
+                        <a href="" class="nav-text">About</a>
+                        <a href="" class="nav-text">Wishlist</a>
+                        <a href="" class="nav-text">Login</a>
+                    </div>
+                </div>
+    
+                <div class="middle-nav">
+                    <a href="home.html"><img src="images/logo.png" alt="logo" class="logo-img"></a>
+                </div>
+    
+                <div class="right-nav">
+                    <a href="product-listing-page.html"><img src="images/heartlogo.png" alt="wishlist"
+                        class="heart-logo"></a>
+                    <a href=""><img src="images/searchlogo.png" alt="search bar icon" class="search-icon"></a>
+                    <a href="index.html" class="nav-text hide-nav">Login</a>
+                    <a href="index.html" class="nav-text cart-text">Cart 0</a>
+                </div>
             </div>
         </nav>
 
-        <div class="grid-container-product-list .grid-flow-row-dense 
-        grid-product-list-rows grid-product-list-col">
-            <div class="grid-product-list-text grid-product-list-col-span2">
-                <p>Serums are formulated with high concentrations of active ingredients 
-                    in a texture that allows them to deeply penetrate the skin. They 
-                    are ideal and effective for targeting specific concerns like dryness, 
-                    wrinkles, hyperpigmentation, and redness. They should be applied as the 
-                    first step in your routine after cleansing.
-
-                    Our serums are vegan, made in France, and include only essential functional ingredients.</p>
+        <div class="banner-container-plp"> 
+            <img src="images/plpbanner.jpg" alt="Typology Skincare Banner"> 
+            <div class="banner-content-container-plp"> 
+                <div class="banner-content-plp">
+                    <h1>RETINOL</h1> 
+                    <p>It stimulates the production of collagen and elastin for smoother, more elastic skin.</p> 
+                </div>
             </div>
+        </div> 
 
-            <div class="product-listing-card">
-                <img src="Images/image4.jpg" alt="image4" class="product-listing-card-image">
-                <h4>Radianite Serum</h4>
-                <p>Vitamin C - $25.90</p>
-            </div>
+        <nav>
+    
+            <div class="filter-div">
+              <div class="filter-nav">
+                  <a href="product-listing-page.html">all products</a>
+                  <a href="index.html">face</a>
+                  <a href="index.html">body</a>
+                  <a href="index.html">hair</a>
+                  <a href="index.html">eyes + lips</a>
+              </div>
+        </nav>
 
-            <div class="product-listing-card">
-                <img src="Images/image4.jpg" alt="image4" class="product-listing-card-image">
-                <h4>Radianite Serum</h4>
-                <p>Vitamin C - $25.90</p>
-            </div>
+        <div class="product-list-container"> 
+    
+            <div class="grid-container-product-list grid-flow-row-dense  
+            grid-product-list-rows grid-product-list-col grid-product-list-gap"> 
+        
+                <div class="product-listing-card"> 
+                    <a href="product-description.html"><img src="Images/product1.png" alt="product1" class="product-listing-card-image"></a>
+                    <h4>Firming Retinol</h4> 
+                    <div class="product-listing-card-description-container">
+                        <h5 class="product-listing-card-desctiption">0.1% Retinol + Damask Rose Extract</h5> 
+                        <h4>$25.90</h4>
+                    </div>
+                    <a href="product-description.html"><input type="submit" value="QUICKVIEW" class="product-button button-style"></a>
+                    <a href="#"><button class="button-style product-button add-to-cart-button">ADD TO CART</button></a>
+                </div>
+        
+                <div class="product-listing-card"> 
+                    <a href="product-description.html"><img src="Images/image4.jpg" alt="image4" class="product-listing-card-image"></a>
+                    <h4>Radianite Serum</h4> 
+                    <div class="product-listing-card-description-container">
+                        <h5 class="product-listing-card-desctiption">Vitamin C</h5> 
+                        <h4>$25.90</h4>
+                    </div>
+                    <a href="product-description.html"><input type="submit" value="QUICKVIEW" class="product-button button-style"></a>
+                    <a href="#"><button class="button-style product-button add-to-cart-button">ADD TO CART</button></a>
+                </div> 
+        
+                <div class="product-listing-card"> 
+                    <a href="product-description.html"><img src="Images/image4.jpg" alt="image4" class="product-listing-card-image"></a>
+                    <h4>Radianite Serum</h4> 
+                    <div class="product-listing-card-description-container">
+                        <h5 class="product-listing-card-desctiption">Vitamin C</h5> 
+                        <h4>$25.90</h4>
+                    </div>
+                    <a href="product-description.html"><input type="submit" value="QUICKVIEW" class="product-button button-style"></a>
+                    <a href="#"><button class="button-style product-button add-to-cart-button">ADD TO CART</button></a>
+                </div> 
+    
+                <div class="product-listing-card"> 
+                    <a href="product-description.html"><img src="Images/image4.jpg" alt="image4" class="product-listing-card-image"></a> 
+                    <h4>Radianite Serum</h4> 
+                    <div class="product-listing-card-description-container">
+                        <h5 class="product-listing-card-desctiption">Vitamin C</h5> 
+                        <h4>$25.90</h4>
+                    </div>
+                    <a href="product-description.html"><input type="submit" value="QUICKVIEW" class="product-button button-style"></a>
+                    <a href="#"><button class="button-style product-button add-to-cart-button">ADD TO CART</button></a>
+                </div> 
+    
+                <div class="product-listing-card"> 
+                    <a href="product-description.html"><img src="Images/image4.jpg" alt="image4" class="product-listing-card-image"></a>
+                    <h4>Radianite Serum</h4> 
+                    <div class="product-listing-card-description-container">
+                        <h5 class="product-listing-card-desctiption">Vitamin C</h5> 
+                        <h4>$25.90</h4>
+                    </div>
+                    <a href="product-description.html"><input type="submit" value="QUICKVIEW" class="product-button button-style"></a>
+                    <a href="#"><button class="button-style product-button add-to-cart-button">ADD TO CART</button></a>
+                </div> 
 
-            <div class="product-listing-card">
-                <img src="Images/image4.jpg" alt="image4" class="product-listing-card-image">
-                <h4>Radianite Serum</h4>
-                <p>Vitamin C - $25.90</p>
-            </div>
-        </div>
+            </div> 
+    
+        </div> 
 
     </body>
 
+    <footer>
+
+        <hr>
+        
+        <div class="footer-header-container">
+            <h3>Typology was born from a mission: to demystify skincare with simple, 
+                straight-talking transparency. We make naturally active, effective 
+                and sustainable skincare in France.</h3>
+        </div>
+        
+        <div class="footer-content-container">
+
+            <div class="footer-grid-container footer-grid-cols">
+
+                <div class="footer-grid-cols-span2">
+                    <h4>Our Products</h4>
+                    <p>Typology products are free from Parabens, 
+                        Phenoxyethanol, Paraffin Oil and Sulphates.</p>
+                    <a href="#">Read our full ingredient blacklist here</a>
+                </div>
+
+                <div>
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our History</a></li>
+                        <li><a href="#">The Black for Good Movement</a></li>
+                        <li><a href="#">Formulation Charter</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Centre</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping and Returns</a></li>
+                        <li><a href="#">Terms of Sales</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Track your Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <h4>Newsletter</h4>
+
+                    <form>
+                        <input type="text" id="email-address" placeholder = "Enter email address">
+                    </form>
+
+                    <p>Yes, I’d like to receive the Typology newsletter. 
+                        I understand that you won’t share my email with third parties.</p>
+                </div>
+
+            </div>
+
+            <!-- Add logo and image -->
+
+        </div>
+
+    </footer>
+
+    </html>
+
+
 </html>
+
+

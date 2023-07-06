@@ -47,9 +47,18 @@ h4 {
   margin-bottom: 0;
 }
 
+/* for product listing page font */
+h5 {
+  font-family: "PostGrotesk Light", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 body {
   font-family: "relativemono", serif;
-  padding: 2rem;
 }
 
 img {
@@ -133,6 +142,11 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
+/* Top nav for Style Guide */
+
+
+
+
 /* Styling for the navigation button */
 .button-nav {
   display: inline-block;
@@ -167,11 +181,13 @@ a:hover {
   color: black;
 }
 
-a img:hover {
-  opacity: 0.5;
-  width: 20.5%;
+a img {
+  width: 100%;
   height: auto;
-  transition: .5s ease;
+}
+
+a img:hover, a img:focus, a img:active {
+  height: auto;
 }
 /* 
   6.The text input shows us when it has been interacted with, both on hover and focus
@@ -250,30 +266,37 @@ input:focus{
   COMBINED ELEMENTS -------------------
 */
 
-/*top navigation*/
+/* Final Top Navigation */
 
-.top-nav {
+.navbar-div {
+  padding: 2rem 2.5rem 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.left-nav {
   list-style-type: none;
-  margin: 3rem;
   padding: 0;
 }
 
-.top-nav li {
+.left-nav li {
   display: inline-block;
   position: relative;
-  margin-right: 10px;
+  margin-right: 1.5rem;
 }
 
-.top-nav li a {
+.nav-text {
   text-decoration: none;
   color: #333;
+  font-size: 0.9rem;
 }
 
-.top-nav li::after {
+.left-nav li::after {
   content: "";
   position: absolute;
-  width: 7px;
-  height: 7px;
+  width: 5.5px;
+  height: 5.5px;
   border-radius: 50%;
   background-color: transparent;
   bottom: -7px;
@@ -283,69 +306,147 @@ input:focus{
   transition: background-color 0.3s ease;
 }
 
-.top-nav li:hover::after {
+.left-nav li:hover::after {
   background-color: #000;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+.middle-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.logo-img {
+  width: 6rem;
+  text-align: center;
 }
 
-/* Product Description */
-
-.dropbtn {
-  background-color: black;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
+.heart-logo {
+  width: 1rem;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+.search-icon {
+  width: 1rem;
+}
+
+.heart-logo:hover,
+.search-icon:hover {
+  width: 1rem !important;
+}
+
+.right-nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
   position: relative;
-  display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+.right-nav a {
   text-decoration: none;
+  color: #333;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .topnav {
+      display: none;
+  }
+
+}
+
+.dropdown {
+  display: none;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+/* Media query for screens less than 900px */
+@media (max-width: 900px) {
+  .navbar-div {
+      margin: -.5rem 0rem -0.5rem -1rem;
+      display: flex;
+      justify-content: space-between;
+  }
+
+.left-nav {
+    display: none;
+}
+
+.nav-text {
+    font-size: 0.8rem;
+}
+
+.dropdownbtn {
+  background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+    z-index: 1;
+}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content a {
+    padding: 10px 16px;
+    display: block;
+}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #767C7C;}
+.dropdown-content a:hover {
+    background-color: rgb(234, 234, 234);
+}
 
-/* drop down taken from https://www.w3schools.com/howto/howto_css_dropdown.asp */
+.dropdown:hover .dropbtn {
+    background-color: white;
+    text-decoration: underline;
+}
+
+.menu-icon { 
+    width: 2.5rem;
+}
+
+.logo-img {
+    width: 5rem;
+}
+
+.heart-logo {
+    display: none;
+}
+
+.hide-nav {
+    display: none;
+}
+
+.right-nav {
+    padding-top: 1rem;
+}
+
+}
+
+/* End of final top navigation */
+
+
+/* Product Description */
+
 
 .colorBlack {
   display: inline-block;
@@ -590,10 +691,158 @@ label {
 
 .product-button {
   width: 100%;
+  font-size: 0.8rem;
 }
 
-a img {
-  width: 20%;
-  height: auto;
+
+/* Footer */
+
+.footer-header-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
+.footer-header-container h3 {
+  font-size: 1.2rem;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 900px) {
+  .footer-header-container{
+    max-width: 1240px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-header-container h3{
+    font-size: 1.4rem;
+    max-width: 500px;
+  }
+}
+
+footer {
+  display: block;
+  position: relative;
+  padding-top: 2.5rem;
+  width: 100%;
+}
+
+footer hr {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 900px) { 
+  footer { 
+      padding-top: 2rem; 
+  }
+
+  footer hr {
+    max-width: 800px;
+  }
+} 
+
+.footer-content-container {
+  background-color: #303030;
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.footer-content-container h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-content-container p {
+  color: white;
+  max-width: 90%;
+}
+
+@media screen and (min-width: 1240px) { 
+  .footer-content-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}  
+
+.footer-grid-container {
+  display: grid;
+  margin-top: 1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.footer-grid-cols {
+  grid-template-columns: repeat(1,minmax(0,1fr));
+}
+
+@media screen and (min-width: 900px) { 
+  .footer-grid-container { 
+      margin-top: 4.5rem; 
+      grid-column-gap: 1.25rem;
+      column-gap: 1.25rem;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .footer-grid-cols {
+    grid-template-columns: repeat(5,minmax(0,1fr));
+  }
+  .footer-grid-cols-span2 { 
+    grid-column: span 2/span 2; 
+  } 
+} 
+
+@media screen and (min-width: 1240px) { 
+  .footer-grid-container {
+    max-width: 1240px;
+  }
+}  
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  margin-top: 0.8rem;
+}
+
+footer a {
+  font-family: "relativemono", serif;
+  font-size: 1rem;
+  font-weight: 410;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #979797;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+footer a:hover, footer a:focus, footer a:active {
+  color: #FFFFFF;
+}
+
+footer input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #CECDC8;
+  color: white;
+  background-color:#303030; 
+}
+
+.newsletter p{
+  font-size: 0.7rem;
+}
+
+/* end of Footer */
 
