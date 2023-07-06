@@ -106,6 +106,10 @@ carousel-container {
   color: #0c0906;
 }
 
+.get-in-touch-text {
+  text-align: center;
+}
+
 .review-text-font {
   font-family: "PostGrotesk Light", serif !important;
   font-size: 1rem;
