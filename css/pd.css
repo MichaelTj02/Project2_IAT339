@@ -294,13 +294,13 @@
     margin-right: auto;  
     padding-right: 1rem;  
     padding-left: 1rem;  
-    padding-bottom: 2.25rem;  
+    padding-bottom: 1.5rem;  
 }  
   
 @media screen and (min-width: 900px) {  
     .plp-pdp-container {  
         margin-top: 3rem;  
-        padding-bottom: 4.5rem;  
+        padding-bottom: 2rem;  
     }  
 }  
   
@@ -360,9 +360,109 @@
 
 /* Grid for product feedback section in Product Description */
 
-.product-feedback-grid-container {
-
+.product-feedback-grid-col {
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    background-color: #FBF9F7;
 }
+
+@media screen and (min-width: 900px) {  
+    .product-feedback-grid-col {  
+        grid-template-columns: repeat(7,minmax(0,1fr));  
+    }  
+}
+
+@media screen and (min-width: 900px) {  
+    .product-feedback-reviews-grid {  
+        grid-column: span 3/span 3;  
+    }  
+}
+
+.product-feedback-reviews {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 900px) {
+    .product-feedback-reviews {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.product-feedback-reviews h2 {
+    margin-bottom: 1rem;
+}
+
+.product-feedback-reviews h3 {
+    font-size: 1.2rem;
+    max-width: 80%;
+}
+
+.checked { /* Star ratings */
+    color: black;
+}
+
+.unchecked {
+    color: #D3D3D3;
+}
+
+/* User rating bar */
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+  
+.middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+}
+  
+  /* Place text to the right */
+.right {
+    text-align: right;
+}
+  
+  /* Clear floats after the columns */
+.row-review:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+  
+  /* Individual bars */
+.bar-5 {width: 33%; height: 18px; background-color: #838383;}
+.bar-4 {width: 25%; height: 18px; background-color: #838383;}
+.bar-3 {width: 25%; height: 18px; background-color: #838383;}
+.bar-2 {width: 0%; height: 18px; background-color: #838383;}
+.bar-1 {width: 17%; height: 18px; background-color: #838383;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+      display: none;
+    }
+}
+
+/* End of user rating bar */
 
 /* End of grid for product feedback section in Product Description */
 
