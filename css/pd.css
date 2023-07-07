@@ -31,6 +31,7 @@
     height: 40rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 900px) {
@@ -46,24 +47,10 @@
 }
 
 .product-description-image {
-    max-width: 700px;
+    /* max-width: 700px;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    left: 50%;
-}
-
-@media screen and (min-width: 900px) {
-    .product-description-image {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-    }
-}
-
-@media screen and (min-width: 1240px) {
-    .product-description-image {
-        padding-top: 17rem;
-        padding-bottom: 17rem
-    }
+    left: 50%; */
 }
 
 .product-description-form-grid-container {
@@ -369,7 +356,14 @@
     margin-bottom: 2rem; 
 } 
  
- 
 /* End of grid for small PLP in Product Description */ 
+
+/* Grid for product feedback section in Product Description */
+
+.product-feedback-grid-container {
+
+}
+
+/* End of grid for product feedback section in Product Description */
 
 /* End of content below product description */
