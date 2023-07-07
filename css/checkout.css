@@ -9,6 +9,7 @@
     margin: 0;
     background-color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
+    margin-top: -2rem;
   }
 
 
@@ -17,18 +18,14 @@
     height: 520px;
     margin: 80px auto;
     background: white;
-    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
-    border-radius: 6px;
-   
     display: flex;
     flex-direction: column;
   }
 
   .title {
     height: 60px;
-    border-bottom: 1px solid #E1E8EE;
     padding: 20px 30px;
-    color: #5E6977;
+    color: black;
     font-size: 18px;
     font-weight: 400;
   }
@@ -37,11 +34,6 @@
     padding: 20px 30px;
     height: 150px;
     display: flex;
-  }
-   
-  .item:nth-child(3) {
-    border-top:  1px solid #E1E8EE;
-    border-bottom:  1px solid #E1E8EE;
   }
 
   .button-checkout {
@@ -102,7 +94,7 @@
   .description span {
     display: block;
     font-size: 14px;
-    color: #43484D;
+    color: black;
     font-weight: 400;
   }
    
@@ -112,7 +104,7 @@
   .description span:last-child {
     font-weight: 300;
     margin-top: 8px;
-    color: #86939E;
+    color: black;
   }
 
   .quantity {
@@ -121,20 +113,17 @@
   }
 
   .quantity input {
-    -webkit-appearance: none;
     border: none;
     text-align: center;
     width: 32px;
     font-size: 16px;
-    color: #43484D;
+    color: black;
     font-weight: 300;
   }
    
   button[class*=btn] {
     width: 30px;
     height: 30px;
-    background-color: #E1E8EE;
-    border-radius: 6px;
     border: none;
     cursor: pointer;
   }
@@ -143,6 +132,10 @@
   }
   .plus-btn img {
     margin-top: 2px;
+  }
+
+  .button-no-padding {
+    padding: 0 !important;
   }
    
   button:focus,
@@ -154,7 +147,7 @@
     padding-top: 40px;
     text-align: center;
     font-size: 16px;
-    color: #43484D;
+    color: black;
     font-weight: 300;
   }
 
@@ -218,10 +211,7 @@
   }
   
   .checkout-container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
+    padding: 0rem 4rem 3rem 4rem;
   }
   
   label {
@@ -235,6 +225,22 @@
     padding: 7px 0;
     font-size: 24px;
   }
+
+    .checkout-text {
+      font-family: "PostGrotesk Light", serif;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .checkout-main-text {
+      font-family: "PostGrotesk Light", serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    .grey-text {
+      color: #979797;
+    }
   
   .checkout-button {
     background-color: black;
@@ -243,7 +249,6 @@
     margin: 10px 0;
     border: none;
     width: 100%;
-    border-radius: 3px;
     cursor: pointer;
     font-size: 17px;
   }
@@ -254,7 +259,7 @@
   
   span.price {
     float: right;
-    color: grey;
+    /* color: grey; */
   }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
