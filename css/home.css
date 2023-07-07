@@ -1,3 +1,6 @@
+/*carousel section
+ https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
 carousel-container {
     width: 100%;
     height: 800px;
@@ -81,6 +84,8 @@ carousel-container {
   color: #333;
 }
 
+/*end of carousel section*/
+
 /* Review */
 .review-section {
   background-color: #f9f5e4;
@@ -130,6 +135,7 @@ carousel-container {
 .review-title {
   text-align: left;
   font-size: 3rem;
+
 }
 
 .review-text-div {
@@ -203,7 +209,50 @@ select.contact-us-country {
 
 /* End of Contact Us */
 
-  
+/*about us section*/
+.about-section {
+  background-color: #fbfbfb;
+  margin: 0rem -2rem;
+  padding: 4rem 0rem;
+}
+
+.about-div { 
+  grid-column: 1 / span 2;
+  display: flex;
+} 
+
+.about-column-left {
+  flex: 60%;
+}
+
+.about-column-right {
+  flex: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.about-img-div img {
+  left: 0;
+  width: 40rem;
+}
+
+.about-text-div {
+  padding: 10rem 7rem;
+  align-content: center;
+  width: 65rem;
+}
+
+.about-text-font {
+  font-family: "PostGrotesk Light", serif !important;
+  font-size: 1rem;
+  font-weight: 400;
+}
   
   
   
