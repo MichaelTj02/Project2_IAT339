@@ -54,7 +54,6 @@
 
 @media screen and (min-width: 900px) {
     .product-description-image {
-        max-width: 800px;
         padding-top: 10rem;
         padding-bottom: 10rem;
     }
@@ -62,7 +61,6 @@
 
 @media screen and (min-width: 1240px) {
     .product-description-image {
-        max-width: 1200px;
         padding-top: 17rem;
         padding-bottom: 17rem
     }
