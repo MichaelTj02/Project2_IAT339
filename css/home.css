@@ -214,48 +214,61 @@ select.contact-us-country {
 /* End of Contact Us */
 
 /*about us section*/
-.about-section {
+
+.about-section-container {
   background-color: #fbfbfb;
-  margin: 0rem -2rem;
-  padding: 4rem 0rem;
-}
-
-.about-div { 
-  grid-column: 1 / span 2;
-  display: flex;
-} 
-
-.about-column-left {
-  flex: 60%;
-}
-
-.about-column-right {
-  flex: 40%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.about-title {
-  text-align: center;
-  font-size: 3rem;
+  display: grid;
+  margin-top: 4rem;
   margin-bottom: 3rem;
 }
 
-.about-img-div img {
-  left: 0;
-  width: 40rem;
+.about-section-grid-col {
+  grid-template-columns: repeat(1,minmax(0,1fr));
 }
 
-.about-text-div {
-  padding: 10rem 7rem;
-  align-content: center;
-  width: 65rem;
+@media screen and (min-width: 900px) {
+  .about-section-grid-col {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+  }
 }
 
-.about-text-font {
+@media screen and (min-width: 900px) {
+  .about-section-image-grid {
+    grid-column: span 1/span 1;
+  }
+}
+
+.about-section-image-grid img {
+  object-fit: cover;
+  max-width: 100%;
+  min-height: 0;
+  height: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .about-section-text-grid {
+    grid-column: span 2/span 2;
+  }
+}
+
+.about-section-text-grid {
+  margin-top: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section-text-grid p {
   font-family: "PostGrotesk Light", serif !important;
   font-size: 1rem;
   font-weight: 400;
+  max-width: 50%;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin: 5rem;
+  margin-left: 0;
 }
   
   
