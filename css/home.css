@@ -207,6 +207,10 @@ select.contact-us-country {
   border: 1px solid #0c0906 !important;
 }
 
+#submit {
+  margin-top: 1.5rem;
+}
+
 /* End of Contact Us */
 
 /*about us section*/

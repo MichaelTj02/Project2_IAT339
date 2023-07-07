@@ -190,6 +190,7 @@
 .product-description-content-grid-container {
     display: grid;
     margin-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 .product-description-content-grid-col {
@@ -392,6 +393,13 @@
     }
 }
 
+@media screen and (min-width: 1600px) {
+    .product-feedback-reviews {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
 .product-feedback-reviews h2 {
     margin-bottom: 1rem;
 }
@@ -410,6 +418,7 @@
 }
 
 /* User rating bar */
+/* User rating bar taken from https://www.w3schools.com/howto/howto_css_user_rating.asp */
 
 /* Three column layout */
 .side {
@@ -427,6 +436,7 @@
   /* Place text to the right */
 .right {
     text-align: right;
+    color: #838383;
 }
   
   /* Clear floats after the columns */
@@ -463,6 +473,40 @@
 }
 
 /* End of user rating bar */
+
+@media screen and (min-width: 900px) {
+    .product-feedback-form-grid {
+        grid-column: span 4/span 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.product-feedback-form {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+    .product-feedback-form {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Product Feedback Form */
+
+input[type=text] {
+    width: 100%;
+}
+
+#submit {
+    margin-top: 1.5rem;
+}
+
+/* End of Product Feedback Form */
 
 /* End of grid for product feedback section in Product Description */
 
