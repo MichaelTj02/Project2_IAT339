@@ -4,6 +4,10 @@ carousel-container {
     overflow: hidden;
     position: relative;
   }
+
+  .carousel-container {
+    overflow: hidden;
+  }
   
   .carousel {
     display: flex;
@@ -13,7 +17,7 @@ carousel-container {
   
   .carousel img {
     width: 100%;
-    height: 800px;
+    height: auto;
     object-fit: cover;
   }
   
@@ -21,11 +25,14 @@ carousel-container {
     0% {
       transform: translateX(0%);
     }
-    33% {
-      transform: translateX(-70%);
+    25% {
+      transform: translateX(0%);
     }
-    66% {
-      transform: translateX(-80%);
+    50% {
+      transform: translateX(-100%);
+    }
+    75% {
+      transform: translateX(-200%);
     }
     100% {
       transform: translateX(0%);
@@ -33,13 +40,14 @@ carousel-container {
   }
 
   .best-seller-section {
-    background-color: #f5f5f5;
-    padding: 50px 0;
+    background-color: white;
+    padding: 100px 0;
   }
   
-  h2 {
-    text-align: center;
-    font-size: 36px;
+  h6 {
+    text-align: left;
+    font-size: 70px;
+    font-display: 'PostGrotesk Medium';
     margin-bottom: 20px;
   }
   
@@ -50,10 +58,11 @@ carousel-container {
   }
   
   .best-seller {
-    width: 300px;
+    width: 480px;
+    height: 655px;
     padding: 20px;
     margin: 20px;
-    background-color: #fff;
+    background-color: F3F4F1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
@@ -64,11 +73,7 @@ carousel-container {
     height: auto;
     margin-bottom: 10px;
   }
-  
-  h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
+
 
 .price {
   font-size: 18px;
@@ -76,6 +81,127 @@ carousel-container {
   color: #333;
 }
 
+/* Review */
+.review-section {
+  background-color: #f9f5e4;
+  margin: 0rem -2rem;
+  padding: 4rem 0rem;
+}
+
+.review-div { 
+  grid-column: 1 / span 2;
+  display: flex;
+} 
+
+.review-column-left {
+  flex: 60%;
+}
+
+.review-column-right {
+  flex: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.star-checked {
+  color: #0c0906;
+}
+
+.get-in-touch-text {
+  text-align: center;
+}
+
+.review-text-font {
+  font-family: "PostGrotesk Light", serif !important;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.review-grey-text {
+  color: #767C7C;
+}
+
+.review-name-text {
+  font-family: "PostGrotesk", serif !important;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.review-title {
+  text-align: left;
+  font-size: 3rem;
+}
+
+.review-text-div {
+  padding: 5rem 7rem;
+  width: 65rem;
+}
+
+.review-img-div img {
+  right: 0;
+  width: 40rem;
+}
+
+/* End of Review */
+
+
+/* Contact Us */
+
+.contact-us-section {
+  padding: 5rem 0rem;
+}
+
+.contact-us-title-text {
+  font-size: 1rem;
+}
+
+.contact-us-div {
+  padding: 0rem 20rem;
+}
+
+.contact-us-placeholder-text {
+  font-family: "PostGrotesk Light", serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contact-us-subject {
+  padding: 1rem 1rem;
+}
+
+/* select style source: https://moderncss.dev/custom-select-styles-with-pure-css/ */
+.contact-us-country {
+  appearance: none;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid #303030;
+  border-radius: 0;
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+
+/* arrow styling source: https://codepen.io/vkjgr/pen/VYMeXp */
+select.contact-us-country {
+  background-image:
+    linear-gradient(45deg, transparent 50%, black 50%),
+    linear-gradient(135deg, black 50%, transparent 50%),
+    linear-gradient(to right, white, white);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+.contact-us-input-border {
+  border: 1px solid #0c0906 !important;
+}
+
+/* End of Contact Us */
 
   
   

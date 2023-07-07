@@ -144,53 +144,8 @@ code {
 
 /* Top nav for Style Guide */
 
-.top-nav {
-  list-style-type: none;
-  margin: 3rem;
-  padding: 0;
-}
 
-.top-nav li {
-  display: inline-block;
-  position: relative;
-  margin-right: 10px;
-}
 
-.top-nav li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.top-nav li::after {
-  content: "";
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: transparent;
-  bottom: -7px;
-  left: 50%;
-  top: 35px;
-  transform: translateX(-50%);
-  transition: background-color 0.3s ease;
-}
-
-.top-nav li:hover::after {
-  background-color: #000;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 /* Styling for the navigation button */
 .button-nav {
@@ -314,9 +269,10 @@ input:focus{
 /* Final Top Navigation */
 
 .navbar-div {
-  margin: 2rem 2.5rem 2rem 2rem;
+  padding: 2rem 2.5rem 2rem 2rem;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 .left-nav {
@@ -330,7 +286,7 @@ input:focus{
   margin-right: 1.5rem;
 }
 
-.left-nav li a {
+.nav-text {
   text-decoration: none;
   color: #333;
   font-size: 0.9rem;
@@ -362,7 +318,7 @@ input:focus{
 }
 
 .logo-img {
-  width: 6.5rem;
+  width: 6rem;
   text-align: center;
 }
 
@@ -383,11 +339,7 @@ input:focus{
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
-}
-
-.right-nav {
-  display: inline-block;
+  justify-content: center;
   position: relative;
 }
 
@@ -398,55 +350,103 @@ input:focus{
   font-size: 0.9rem;
 }
 
+@media (min-width: 900px) {
+  .topnav {
+      display: none;
+  }
+
+}
+
+.dropdown {
+  display: none;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+/* Media query for screens less than 900px */
+@media (max-width: 900px) {
+  .navbar-div {
+      margin: -.5rem 0rem -0.5rem -1rem;
+      display: flex;
+      justify-content: space-between;
+  }
+
+.left-nav {
+    display: none;
+}
+
+.nav-text {
+    font-size: 0.8rem;
+}
+
+.dropdownbtn {
+  background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 10px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+    text-decoration: underline;
+}
+
+.menu-icon { 
+    width: 2.5rem;
+}
+
+.logo-img {
+    width: 5rem;
+}
+
+.heart-logo {
+    display: none;
+}
+
+.hide-nav {
+    display: none;
+}
+
+.right-nav {
+    padding-top: 1rem;
+}
+
+}
+
 /* End of final top navigation */
 
 
 /* Product Description */
 
-.dropbtn {
-  background-color: black;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #767C7C;}
-
-/* drop down taken from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .colorBlack {
   display: inline-block;
@@ -693,6 +693,7 @@ label {
   width: 100%;
   font-size: 0.8rem;
 }
+
 
 /* Footer */
 
