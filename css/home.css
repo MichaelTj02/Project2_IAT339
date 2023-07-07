@@ -5,14 +5,8 @@ carousel-container {
     position: relative;
   }
 
-  body {
-    margin-top: -2rem !important;
-    margin-right: -2rem !important;
-    margin-left: -2rem !important;
-  }
-
   .carousel-container {
-    overflow: scroll;
+    overflow: hidden;
   }
   
   .carousel {
