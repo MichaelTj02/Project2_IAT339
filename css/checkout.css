@@ -1,3 +1,5 @@
+/*shopping cart https://designmodo.com/shopping-cart-ui/*/
+
 * {
     box-sizing: border-box;
   }
@@ -178,7 +180,7 @@
   }
 
 
-  /*checkout cart*/
+  /*checkout cart https://www.w3schools.com/howto/howto_css_checkout_form.asp*/
   .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
